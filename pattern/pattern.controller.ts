@@ -5,7 +5,7 @@ export class PatternController {
     const patternService = new PatternService();
     let param = req.body;
     let result = await patternService.getPattern(param);
-    res.setHeader("content-type", "application/json");
+    res.set("Access-Control-Allow-Origin", "http://localhost:4200");
     res.send(result);
   }
 }
