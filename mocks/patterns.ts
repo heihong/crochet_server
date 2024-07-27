@@ -1,4 +1,4 @@
-import { Chapter, Pattern, Todo } from "./../models/pattern.interface";
+import { Chapter, Pattern, Todo } from "../models/pattern.interface";
 
 const todoPikachuHead: Todo[] = [
   {
@@ -76,3 +76,11 @@ export const pikachu: Pattern = {
   title: "pikachu",
   chapter: chaptersPikachu,
 };
+
+export const pikachu2: Pattern = {
+  id: "pikachu2",
+  title: "pikachu2",
+  chapter: chaptersPikachu,
+};
+
+export const Patterns: Pattern[] = [pikachu, pikachu2];
